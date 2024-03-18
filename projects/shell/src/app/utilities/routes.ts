@@ -1,7 +1,7 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { Routes } from '@angular/router';
-import { APP_ROUTES } from '../../../../mfe1/src/app/app.routes';
 import { CustomManifest } from './remoteConfig';
+import {APP_ROUTES} from '../app.routes';
 
 export function buildRoutes(options: CustomManifest): Routes {
   const lazyRoutes: Routes = Object.keys(options).map((key) => {
