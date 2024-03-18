@@ -1,5 +1,3 @@
-const { shareAll, withModuleFederationPlugin } = require('@angular-architects/module-federation/webpack');
-
 module.exports = withModuleFederationPlugin({
 
   shared: {
@@ -7,3 +5,5 @@ module.exports = withModuleFederationPlugin({
   },
 
 });
+
+const { shareAll, withModuleFederationPlugin } = require('@angular-architects/module-federation/webpack');
